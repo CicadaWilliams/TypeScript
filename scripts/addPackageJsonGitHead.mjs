@@ -16,6 +16,11 @@ if (!packageJsonFilePath) {
 
 const packageJsonValue = JSON.parse(readFileSync(packageJsonFilePath, "utf8"));
 
+if (!packageJsonValue) {
+    console.error("Bad path");
+    process.exit(1);
+}
+
 const cwd = dirname(resolve(packageJsonFilePath));
 const gitHead = execFileSync("git", ["rev-parse", "HEAD"], { cwd, encoding: "utf8" }).trim();
 
