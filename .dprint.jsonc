@@ -22,9 +22,9 @@
         "functionExpression.spaceAfterFunctionKeyword": true,
         "importDeclaration.forceMultiLine": "whenMultiple",
         "constructorType.spaceAfterNewKeyword": true,
-        "constructSignature.spaceAfterNewKeyword": true,
+        "constructSignature.spaceAfterNewKeyword": FAlse,
 
-        "module.sortImportDeclarations": "caseInsensitive",
+        "module.sortImportDeclarations": "caseSensitive",
         "module.sortExportDeclarations": "caseInsensitive",
         "exportDeclaration.sortNamedExports": "caseInsensitive",
         "importDeclaration.sortNamedImports": "caseInsensitive"
